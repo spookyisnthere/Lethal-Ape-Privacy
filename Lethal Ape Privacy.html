@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lethal Ape Extended - Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --void: #0a0a0a;
+    --ink: #141412;
+    --bone: #ece7db;
+    --bone-dim: #b9b3a4;
+    --concrete: #55524a;
+    --rust: #8a2e1f;
+    --rust-bright: #b8452c;
+    --line: #2c2a25;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    background:var(--void);
+    color:var(--bone);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:15.5px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:50;
+    opacity:0.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  a{color:var(--rust-bright);}
+
+  .wrap{max-width:760px; margin:0 auto; padding:0 28px;}
+
+  .hero{
+    position:relative;
+    padding:96px 0 64px;
+    border-bottom:2px solid var(--line);
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(138,46,31,0.16), transparent 60%),
+      var(--void);
+    overflow:hidden;
+  }
+
+  .hero .wrap{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  .logo-mark{
+    width:220px;
+    max-width:60vw;
+    filter:drop-shadow(0 0 28px rgba(184,69,44,0.25));
+    margin-bottom:36px;
+  }
+
+  .eyebrow-plate{
+    display:inline-block;
+    font-family:'Anton', sans-serif;
+    letter-spacing:0.04em;
+    font-size:13px;
+    color:var(--void);
+    background:var(--rust-bright);
+    padding:6px 14px;
+    transform:skewX(-8deg);
+    margin-bottom:22px;
+  }
+
+  h1{
+    font-family:'Anton', sans-serif;
+    font-weight:400;
+    letter-spacing:0.01em;
+    font-size:clamp(38px, 7vw, 62px);
+    line-height:0.98;
+    color:var(--bone);
+    text-shadow: 3px 3px 0 var(--rust);
+  }
+
+  .hero-sub{
+    margin-top:22px;
+    max-width:480px;
+    color:var(--bone-dim);
+    font-size:14px;
+    line-height:1.8;
+  }
+
+  .meta-row{
+    margin-top:28px;
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    justify-content:center;
+    font-size:12.5px;
+    color:var(--concrete);
+  }
+  .meta-row span{color:var(--bone-dim);}
+
+  .notice{
+    background:var(--ink);
+    border-left:4px solid var(--rust-bright);
+    padding:18px 22px;
+    margin:44px 0;
+    font-size:13.5px;
+    color:var(--bone-dim);
+  }
+  .notice strong{color:var(--bone);}
+
+  .toc{
+    margin:44px 0 56px;
+    border:1px solid var(--line);
+    padding:26px 26px 20px;
+  }
+  .toc-title{
+    font-family:'Anton', sans-serif;
+    font-size:13px;
+    letter-spacing:0.06em;
+    color:var(--rust-bright);
+    margin-bottom:14px;
+  }
+  .toc ol{
+    list-style:none;
+    counter-reset:toc;
+    columns:2;
+    -webkit-columns:2;
+    column-gap:24px;
+  }
+  .toc li{
+    counter-increment:toc;
+    font-size:13px;
+    margin-bottom:9px;
+    break-inside:avoid;
+  }
+  .toc li a{
+    color:var(--bone-dim);
+    text-decoration:none;
+    border-bottom:1px dotted var(--line);
+  }
+  .toc li a:hover{color:var(--rust-bright);}
+  .toc li::before{
+    content:counter(toc, decimal-leading-zero) " ";
+    color:var(--concrete);
+    margin-right:4px;
+  }
+
+  main{padding:8px 0 90px;}
+
+  section{
+    padding:46px 0;
+    border-bottom:1px solid var(--line);
+    scroll-margin-top:24px;
+  }
+  section:last-of-type{border-bottom:none;}
+
+  .sec-num{
+    font-family:'Anton', sans-serif;
+    font-size:13px;
+    color:var(--rust-bright);
+    letter-spacing:0.05em;
+    display:block;
+    margin-bottom:6px;
+  }
+
+  h2{
+    font-family:'Anton', sans-serif;
+    font-weight:400;
+    font-size:26px;
+    letter-spacing:0.01em;
+    color:var(--bone);
+    margin-bottom:18px;
+    position:relative;
+    display:inline-block;
+  }
+
+  h3{
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:700;
+    font-size:14.5px;
+    color:var(--rust-bright);
+    margin:24px 0 10px;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+  }
+
+  p{margin-bottom:14px; color:#d8d3c6; max-width:66ch;}
+  strong{color:var(--bone);}
+
+  ul, ol.plain{margin:14px 0 14px 0; padding-left:0;}
+  ul li, ol.plain li{
+    list-style:none;
+    position:relative;
+    padding-left:22px;
+    margin-bottom:10px;
+    color:#d8d3c6;
+    max-width:62ch;
+  }
+  ul li::before{
+    content:"//";
+    position:absolute;
+    left:0;
+    color:var(--rust-bright);
+    font-weight:700;
+  }
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px 0;
+    font-size:13px;
+  }
+  th{
+    text-align:left;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--rust-bright);
+    border-bottom:2px solid var(--line);
+    padding:8px 10px;
+    letter-spacing:0.03em;
+  }
+  td{
+    border-bottom:1px solid var(--line);
+    padding:10px 10px;
+    color:#d8d3c6;
+    vertical-align:top;
+  }
+  tr:hover td{background:rgba(138,46,31,0.06);}
+
+  .partner-card{
+    border:1px solid var(--line);
+    padding:18px 20px;
+    margin:16px 0;
+    background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);
+  }
+  .partner-card .pname{
+    font-family:'Anton', sans-serif;
+    font-size:15px;
+    color:var(--bone);
+    letter-spacing:0.02em;
+  }
+  .partner-card .prole{
+    font-size:11.5px;
+    color:var(--rust-bright);
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    margin-bottom:8px;
+  }
+
+  .fill{
+    color:var(--rust-bright);
+    border-bottom:1px dashed var(--rust-bright);
+    padding:0 2px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    border-top:2px solid var(--line);
+    padding:40px 0 60px;
+    text-align:center;
+  }
+  footer .stamp{
+    font-family:'Anton', sans-serif;
+    font-size:14px;
+    letter-spacing:0.05em;
+    color:var(--concrete);
+  }
+  footer p{
+    margin-top:10px;
+    font-size:12px;
+    color:var(--concrete);
+    max-width:100%;
+  }
+
+  /* back to top */
+  .top-link{
+    display:inline-block;
+    margin-top:20px;
+    font-size:12px;
+    color:var(--bone-dim);
+    text-decoration:none;
+    border-bottom:1px dotted var(--line);
+  }
+
+  @media (max-width:600px){
+    .toc ol{columns:1;}
+    h2{font-size:22px;}
+    .hero{padding:64px 0 44px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="logo-mark" src="https://cdn.discordapp.com/attachments/1539305027318063224/1544337976585232394/LAElogo.jpg?ex=6a982452&is=6a96d2d2&hm=465e599eed84e7e5b12d824b8c7b62e7c5392326e9e19499394f3174f7d3a811&" alt="Lethal Ape Extended logo">
+    <span class="eyebrow-plate">Legal / Player Data</span>
+    <h1>PRIVACY&nbsp;POLICY</h1>
+    <p class="hero-sub">How Lethal Ape Extended collects, uses, and protects your data across Meta Quest, PlayFab, and Photon networking.</p>
+    <div class="meta-row">
+      <div>Effective date <span>September 1, 2026</span></div>
+      <div>Platform <span>Meta Quest</span></div>
+      <div>Version <span>1.0</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="toc">
+    <div class="toc-title">CONTENTS</div>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#partners">Third-party services</a></li>
+      <li><a href="#use">How we use your data</a></li>
+      <li><a href="#voice">Voice & multiplayer data</a></li>
+      <li><a href="#sharing">Sharing & disclosure</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#kids">Children's privacy</a></li>
+      <li><a href="#rights">Your rights & choices</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="overview">
+      <span class="sec-num">01</span>
+      <h2>Overview</h2>
+      <p><strong>Lethal Ape Extended</strong> ("the game," "we," "us") is a multiplayer VR game built for Meta Quest headsets. This policy explains what data gets collected when you play, why we collect it, and which outside services help us run the game — namely <strong>Meta</strong> (platform and store), <strong>PlayFab</strong> (accounts, matchmaking backend, and live ops), and <strong>Photon</strong> (real-time networking for multiplayer sessions).</p>
+      <p>By installing or playing Lethal Ape Extended, you agree to the collection and use of information as described here. If you don't agree, please don't use the game.</p>
+    </section>
+
+    <section id="collect">
+      <span class="sec-num">02</span>
+      <h2>Information we collect</h2>
+
+      <h3>Account & platform data</h3>
+      <ul>
+        <li>Your Meta account ID and display name, provided to us by the Meta Platform SDK when you launch the game.</li>
+        <li>Headset and hardware type (e.g. Quest 2, Quest 3, Quest Pro), used to tune performance and locomotion comfort settings.</li>
+        <li>App version, session length, and crash logs.</li>
+      </ul>
+
+      <h3>Gameplay & progression data</h3>
+      <ul>
+        <li>In-game profile: unlocked cosmetics, stats, achievements, and progression, stored via PlayFab.</li>
+        <li>Matchmaking data: region, lobby history, and session results.</li>
+        <li>Movement telemetry from the game's arm-swing locomotion system (position/velocity of your tracked hands and headset), used only to drive your in-game movement and never sent anywhere as raw recorded footage.</li>
+      </ul>
+
+      <h3>Networking data</h3>
+      <ul>
+        <li>Your device's IP address and connection quality metrics, handled by Photon to host and sync multiplayer rooms.</li>
+        <li>Real-time position, rotation, and action data for your avatar, relayed to other players in your session so the game can sync movement.</li>
+      </ul>
+
+      <h3>Communications</h3>
+      <ul>
+        <li>If voice chat is enabled, live audio is transmitted peer-to-peer or relayed through Photon Voice for the duration of a session. We do not record or store voice chat.</li>
+      </ul>
+    </section>
+
+    <section id="partners">
+      <span class="sec-num">03</span>
+      <h2>Third-party services we rely on</h2>
+      <p>We don't build our own servers for identity, matchmaking, or networking — we rely on established platforms. Each one processes a slice of your data under its own privacy terms:</p>
+
+      <div class="partner-card">
+        <div class="pname">Meta Platforms, Inc.</div>
+        <div class="prole">Distribution · Account identity · Store</div>
+        <p>Meta provides the Quest platform SDK we use for login, entitlement checks (verifying you own the game), and store integration. Meta's handling of your account data is governed by the <a href="https://www.meta.com/legal/quest/privacy-policy/" target="_blank" rel="noopener">Meta Privacy Policy</a>.</p>
+      </div>
+
+      <div class="partner-card">
+        <div class="pname">PlayFab (Microsoft)</div>
+        <div class="prole">Player accounts · Backend · Live ops · Analytics</div>
+        <p>PlayFab stores your player profile, inventory, statistics, and title data, and powers matchmaking and any live events or store offers inside the game. PlayFab is a Microsoft product; see the <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener">Microsoft Privacy Statement</a> for how it handles data on our behalf.</p>
+      </div>
+
+      <div class="partner-card">
+        <div class="pname">Photon Engine (Exit Games GmbH)</div>
+        <div class="prole">Real-time networking · Voice relay</div>
+        <p>Photon hosts the relay servers that sync players inside a multiplayer room — position, movement, actions, and optionally voice. Photon processes connection metadata (like IP address) needed to route traffic. See <a href="https://www.photonengine.com/en-US/Photon/Privacy" target="_blank" rel="noopener">Photon's privacy policy</a> for details.</p>
+      </div>
+
+      <p>We do not currently send player data to any advertising or analytics network beyond what's built into the above platforms. If that changes, we'll update this policy and the version number at the top of this page.</p>
+    </section>
+
+    <section id="use">
+      <span class="sec-num">04</span>
+      <h2>How we use your data</h2>
+      <ul>
+        <li>To run core gameplay: locomotion, matchmaking, room hosting, and syncing your avatar with other players.</li>
+        <li>To save your progression, cosmetics, and settings between sessions.</li>
+        <li>To detect and act on cheating, exploits, or abusive behavior reported through in-game tools.</li>
+        <li>To diagnose crashes and performance issues.</li>
+        <li>To communicate important updates, such as patch notes or service interruptions, where you've opted in.</li>
+      </ul>
+      <p>We do not sell your personal data, and we do not use your gameplay data to build advertising profiles.</p>
+    </section>
+
+    <section id="voice">
+      <span class="sec-num">05</span>
+      <h2>Voice & multiplayer data</h2>
+      <p>Lethal Ape Extended is played with other people in real time. When you're in a multiplayer lobby, your avatar's movement and, if enabled, your voice are shared live with everyone else in that room through Photon's relay servers. This is necessary for the game to function — there's no way to play multiplayer without other players seeing your movement and hearing your voice chat.</p>
+      <p>You can mute yourself or other players, and disable voice chat entirely, from the in-game settings menu at any time.</p>
+    </section>
+
+    <section id="sharing">
+      <span class="sec-num">06</span>
+      <h2>Sharing & disclosure</h2>
+      <p>Outside of the platforms named in Section 3, we share data only in these situations:</p>
+      <table>
+        <tr><th>Situation</th><th>What's shared</th></tr>
+        <tr><td>Legal requirement</td><td>Data requested under a valid subpoena, court order, or law enforcement request.</td></tr>
+        <tr><td>Safety</td><td>Data needed to investigate harassment, cheating, or threats reported in-game.</td></tr>
+        <tr><td>Business transfer</td><td>If the studio is acquired or merges, player data may transfer to the new owner under this same policy.</td></tr>
+      </table>
+    </section>
+
+    <section id="retention">
+      <span class="sec-num">07</span>
+      <h2>Data retention</h2>
+      <p>Your PlayFab player profile and progression are kept for as long as your account is active. Session-based networking data held by Photon (positions, voice audio) exists only for the duration of a live match and is not stored afterward. If you delete your account, we'll remove your PlayFab profile within <span class="fill">[30] days</span>, aside from records we're legally required to keep.</p>
+    </section>
+
+    <section id="security">
+      <span class="sec-num">08</span>
+      <h2>Security</h2>
+      <p>We rely on the security infrastructure of Meta, PlayFab, and Photon, all of which encrypt data in transit. Access to player data on our end is limited to team members who need it to operate the game. No system is perfectly secure, and we can't guarantee absolute protection against every possible breach.</p>
+    </section>
+
+    <section id="kids">
+      <span class="sec-num">09</span>
+      <h2>Children's privacy</h2>
+      <p>Lethal Ape Extended is not directed at children under 13 (or the minimum age required by your Meta account), and we don't knowingly collect personal data from them beyond what Meta's platform itself requires for account creation. If you believe a child has provided us data outside of Meta's own account system, contact us using the details in Section 13 and we'll remove it.</p>
+    </section>
+
+    <section id="rights">
+      <span class="sec-num">10</span>
+      <h2>Your rights & choices</h2>
+      <p>Depending on where you live, you may have rights to access, correct, delete, or export your data, and to object to certain processing. To exercise these rights:</p>
+      <ul>
+        <li>Manage your Meta account data through your <a href="https://www.meta.com/quest/privacy/" target="_blank" rel="noopener">Meta Quest privacy settings</a>.</li>
+        <li>Request deletion of your in-game PlayFab profile by contacting us at <span class="fill">badbatterystudios@gmail.com</span>.</li>
+        <li>Mute or disable voice chat at any time from the pause menu.</li>
+      </ul>
+      <p>Residents of the EEA/UK and California have additional rights under GDPR and CCPA respectively — see Section 13 to reach us with a request.</p>
+    </section>
+
+    <section id="transfers">
+      <span class="sec-num">11</span>
+      <h2>International transfers</h2>
+      <p>Because Meta, PlayFab, and Photon operate global server infrastructure, your data may be processed in countries other than the one you live in, including the United States. Each of those providers maintains its own safeguards for cross-border transfers, described in the links in Section 3.</p>
+    </section>
+
+    <section id="changes">
+      <span class="sec-num">12</span>
+      <h2>Changes to this policy</h2>
+      <p>We'll update the effective date at the top of this page whenever we make changes, and post a notice in the game's update notes for anything material. Continuing to play after an update means you accept the revised policy.</p>
+    </section>
+
+    <section id="contact">
+      <span class="sec-num">13</span>
+      <h2>Contact us</h2>
+      <p>Questions about this policy or your data:</p>
+      <ul>
+        <li>Email: <span class="fill">badbatterystudios@gmail.com</span></li>
+        <li>Studio: <span class="fill">BadBatteryStudio</span></li>
+        <li>Address: <span class="fill">None Given</span></li>
+      </ul>
+    </section>
+
+  </main>
+
+</div>
+
+<footer>
+  <div class="stamp">LETHAL APE EXTENDED</div>
+  <p>© 2026 <span class="fill">BadBatteryStudio</span>. Not affiliated with Meta Platforms, Inc., PlayFab, or Photon/Exit Games GmbH beyond use of their listed services.</p>
+  <a class="top-link" href="#overview">back to top ↑</a>
+</footer>
+
+</body>
+</html>
